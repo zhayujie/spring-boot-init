@@ -31,7 +31,6 @@ public class FileUtil {
         }
     }
 
-    public static void main(String[] args) {
-        System.out.println(FileUtil.read(System.getProperty("user.dir") + "/src/main/resources/config/application.properties"));
+    public static void main(String[] args) throws Exception {
     }
 }
