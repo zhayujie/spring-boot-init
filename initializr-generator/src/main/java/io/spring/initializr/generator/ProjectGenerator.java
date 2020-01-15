@@ -271,6 +271,9 @@ public class ProjectGenerator {
 		File resources = new File(dir, "src/main/resources");
 		resources.mkdirs();
 
+		System.out.println("输出model结构");
+		System.out.println(model);
+
 		// 生成工程目录
 		generateDirByArchetype(src, resources, model);
 		return rootDir;

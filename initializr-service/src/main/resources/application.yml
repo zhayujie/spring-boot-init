@@ -277,3 +277,15 @@ initializr:
     value: com.zhayujie.kit.sample
   description:
     value: 微服务样例
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  #      base-path: /monitor
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
