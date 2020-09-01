@@ -72,17 +72,17 @@ public class DefaultInitializrMetadataProvider implements InitializrMetadataProv
 	}
 
 	protected List<DefaultMetadataElement> fetchBootVersions() {
-		String url = this.metadata.getConfiguration().getEnv().getSpringBootMetadataUrl();
-		if (StringUtils.hasText(url)) {
-			try {
-				log.info("Fetching boot metadata from {}", url);
-				return new SpringBootMetadataReader(this.objectMapper, this.restTemplate,
-						url).getBootVersions();
-			}
-			catch (Exception ex) {
-				log.warn("Failed to fetch spring boot metadata", ex);
-			}
-		}
+//		String url = this.metadata.getConfiguration().getEnv().getSpringBootMetadataUrl();
+//		if (StringUtils.hasText(url)) {
+//			try {
+//				log.info("Fetching boot metadata from {}", url);
+//				return new SpringBootMetadataReader(this.objectMapper, this.restTemplate,
+//						url).getBootVersions();
+//			}
+//			catch (Exception ex) {
+//				log.warn("Failed to fetch spring boot metadata", ex);
+//			}
+//		}
 		return null;
 	}
 
