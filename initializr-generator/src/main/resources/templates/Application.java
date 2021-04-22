@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class {{applicationName}} {
 
     public static void main(String[] args) {
-        log.info("Hello init!");
         SpringApplication.run({{applicationName}}.class, args);
     }
 }

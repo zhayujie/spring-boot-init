@@ -1,6 +1,6 @@
-package {{packageName}}.common.web.exception;
+package {{packageName}}.common.exception;
 
-import {{packageName}}.model.dto.ResultDTO;
+import {{packageName}}.model.base.ApiResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class BaseExceptionHandle {
     @ExceptionHandler(Exception.class)
-    public ResultDTO errorHandle(Exception e) {
+    public ApiResult<String> errorHandle(Exception e) {
         log.error(e.getMessage());
-        return new ResultDTO(true, 500, "服务器错误");
+        return ApiResult.error(e.getMessage());
     }
 }

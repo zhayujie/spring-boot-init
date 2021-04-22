@@ -3,16 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>io.spring.initializr</groupId>
-		<artifactId>initializr</artifactId>
-		<version>0.6.0.RELEASE</version>
+		<groupId>com.zhayujie.kit</groupId>
+		<artifactId>spring-boot-init</artifactId>
+		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>initializr-service</artifactId>
 	<name>Spring Initializr :: Service</name>
-
-	<properties>
-		<main.basedir>${basedir}/..</main.basedir>
-	</properties>
 
 	<dependencies>
 		<dependency>
@@ -25,11 +21,11 @@
 		</dependency>
 
 		<dependency>
-			<groupId>io.spring.initializr</groupId>
+			<groupId>com.zhayujie.kit</groupId>
 			<artifactId>initializr-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>io.spring.initializr</groupId>
+			<groupId>com.zhayujie.kit</groupId>
 			<artifactId>initializr-actuator</artifactId>
 		</dependency>
 

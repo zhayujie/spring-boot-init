@@ -1,6 +1,5 @@
 package {{packageName}}.utils;
 import com.alibaba.fastjson.JSON;
-import {{packageName}}.model.dto.ResultDTO;
 
 import java.util.List;
 
@@ -31,19 +30,5 @@ public class JsonUtil {
      */
     public static <T> List<T> parseToList(String text, Class<T> clazz) {
         return JSON.parseArray(text, clazz);
-    }
-
-
-    public static void main(String[] args) {
-        ResultDTO dto = new ResultDTO(true, 200, "success");
-        String res = JsonUtil.marshal(dto);
-        System.out.println(res);
-
-        ResultDTO newDto = JsonUtil.parseToObject(res, ResultDTO.class);
-        System.out.println(newDto.getMessage());
-
-        String listDto = "[{\"code\":200,\"message\":\"success\"}]";
-        List<ResultDTO> dtos = JsonUtil.parseToList(listDto, ResultDTO.class);
-        System.out.println(dtos.get(0).getMessage());
     }
 }

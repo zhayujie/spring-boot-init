@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.zhayujie.kit</groupId>
 	<artifactId>spring-boot-init</artifactId>
-	<version>1.0.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>SpringBoot Init</name>
 	<description>A web-based quickstart generator for Spring projects</description>
@@ -52,30 +52,30 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>io.spring.initializr</groupId>
+				<groupId>com.zhayujie.kit</groupId>
 				<artifactId>initializr-actuator</artifactId>
-				<version>0.6.0.RELEASE</version>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>io.spring.initializr</groupId>
+				<groupId>com.zhayujie.kit</groupId>
 				<artifactId>initializr-generator</artifactId>
-				<version>0.6.0.RELEASE</version>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>io.spring.initializr</groupId>
+				<groupId>com.zhayujie.kit</groupId>
 				<artifactId>initializr-generator</artifactId>
-				<version>0.6.0.RELEASE</version>
+				<version>1.0-SNAPSHOT</version>
 				<type>test-jar</type>
 			</dependency>
 			<dependency>
-				<groupId>io.spring.initializr</groupId>
+				<groupId>com.zhayujie.kit</groupId>
 				<artifactId>initializr-web</artifactId>
-				<version>0.6.0.RELEASE</version>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>io.spring.initializr</groupId>
+				<groupId>com.zhayujie.kit</groupId>
 				<artifactId>initializr-web</artifactId>
-				<version>0.6.0.RELEASE</version>
+				<version>1.0-SNAPSHOT</version>
 				<type>test-jar</type>
 			</dependency>
 
